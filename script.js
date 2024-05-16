@@ -18,25 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // }
     // setInterval(moveText, textWidth * 10);
 
-    window.addEventListener('load', () => {
-        let loaderText = document.getElementById('loader-text');
-        let content = document.getElementById('content');
-        let loader = document.getElementById('loader');
-        let count = 0;
+    // window.addEventListener('load', () => {
+    //     let loaderText = document.getElementById('loader-text');
+    //     let content = document.getElementById('content');
+    //     let loader = document.getElementById('loader');
+    //     let count = 0;
       
-        let interval = setInterval(() => {
-          count++;
-          loaderText.textContent = count + '%';
-          if (count === 100) {
-            clearInterval(interval);
-            loader.classList.add('slide-down');
-            setTimeout(() => {
-              loader.style.display = 'none';
-              content.style.display = 'block';
-            }, 1000); 
-          }
-        }, 30); 
-      });
+    //     let interval = setInterval(() => {
+    //       count++;
+    //       loaderText.textContent = count + '%';
+    //       if (count === 100) {
+    //         clearInterval(interval);
+    //         loader.classList.add('slide-down');
+    //         setTimeout(() => {
+    //           loader.style.display = 'none';
+    //           content.style.display = 'block';
+    //         }, 1000); 
+    //       }
+    //     }, 30); 
+    // });
 
     const cursorDot = document.querySelector('.cursor-dot');
 
